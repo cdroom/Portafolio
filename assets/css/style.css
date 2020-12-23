@@ -1,0 +1,21 @@
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+
+  #inicio {
+    
+    background-image: url('../img/banner_ppal.png');
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    padding: 10rem 3.125rem;
+
+}
