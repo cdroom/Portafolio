@@ -75,7 +75,11 @@ h2,h5{
 .carousel-inner button {
   margin-top: 15px;
 }
-
+@media (max-width: 576px) {
+  .scroll-top {
+     font-size: 10px !important;
+  }
+}
 
 .scroll-top {
 	color: #00000070;
