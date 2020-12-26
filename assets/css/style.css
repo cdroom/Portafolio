@@ -7,7 +7,9 @@ body * {
     border: 0;
     padding: 0;
   }
-
+h2,h5{
+  font-weight: 700 !important;
+}
   ul {
     padding-left: 10px;
     list-style: none;
@@ -28,7 +30,7 @@ body * {
 
 
   #inicio {
-    background-image: url('../img/banner_ppal.png');
+    background-image: url('../img/banner.png');
     text-align: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +38,11 @@ body * {
     text-shadow: 0.125em 0.25em 0.125em #707070;
     padding: 10rem 3.125rem;
 
+}
+
+.img_perfil {
+  width: 100%;
+  height: auto;
 }
 
 .borde_caja {
@@ -71,10 +78,9 @@ body * {
 
 
 .scroll-top {
-	color: #b73737;
+	color: #00000070;
 	display: none;
-	width: 40px;
-	height: 40px;
+
 	position: fixed;
 	z-index: 1000;
 	bottom: 50px;
