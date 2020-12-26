@@ -1,20 +1,33 @@
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
+    $("a").click(function(event){
+        if (this.hash !== "") {
+           event.preventDefault();
+           var gato = this.hash;
+             $("html, body").animate({
+               scrollTop: $(gato).offset().top
+               }, 800, function(){
+                window.location.hash = gato;
+               });
+         }
+       });
 
-    $('#enviarCorreo').click(function (){
-        alert("El correo fue enviado correctamente!!")
-    });
+  
+       
+       $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('.scroll-top').fadeIn('slow');    
+            } else {
+            $('.scroll-top').fadeOut('slow');
+        }
+        });
+        $('.scroll-top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 600);
+        });
 
-
-    $('body').on('dblclick', 'h4', function(){
-        $(this).css("color","red");
-    });
-
-    $('.card-title').click(function(){
-        $('.card-text').toggle()
-    });
-
-
-    
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
 })
